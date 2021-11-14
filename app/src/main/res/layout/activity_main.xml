@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#060D10"
+    android:background="#46AFAF"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="385dp"
         android:layout_height="43dp"
-        android:text="¡¡Hola Mundo De Android ¡¡"
+        android:background="#EFEFF3"
+        android:backgroundTint="#E6E8EF"
+        android:text="!!Mundo De Android ¡¡"
+        android:textAlignment="viewStart"
         android:textColor="@color/design_default_color_primary_dark"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -20,7 +24,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintVertical_bias="0.248" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,15 +42,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="142dp"
-        android:layout_height="158dp"
-        android:background="#E91E63"
+        android:layout_width="320dp"
+        android:layout_height="281dp"
+        android:src="@drawable/velas"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.291"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

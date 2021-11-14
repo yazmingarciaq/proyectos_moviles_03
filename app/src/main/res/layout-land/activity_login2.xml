@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity2">
+
+    <TextView
+        android:id="@+id/tvTitleLogin"
+        android:layout_width="410dp"
+        android:layout_height="45dp"
+        android:rotation="-17"
+        android:rotationX="41"
+        android:rotationY="8"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+        android:text="@string/title_login"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <ImageView
+        android:id="@+id/ivlogin"
+        android:layout_width="287dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/velas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleLogin"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <EditText
+        android:id="@+id/etPersonName"
+        android:layout_width="323dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/ivlogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleLogin"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="325sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/ivlogin"
+        app:layout_constraintTop_toBottomOf="@+id/etPersonName"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivlogin"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>

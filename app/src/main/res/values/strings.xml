@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Holamundo-03</string>
+    <string name="title_login">mi app android</string>
+    <string name="hint_name">Escriba su nombe</string>
+    <string name="hint_password">Escriba su contraseña</string>
+    <string name="Enter">Ingresar</string>
 </resources>
